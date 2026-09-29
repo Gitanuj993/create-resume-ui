@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/resume/:path*",
+      "destination": "https://create-resume-backend-1dql.onrender.com/resume/:path*"
+    }
+  ]
+}
