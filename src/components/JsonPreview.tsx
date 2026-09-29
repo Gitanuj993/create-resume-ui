@@ -13,6 +13,7 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   // Construct exact Pydantic schema JSON payload
   const formattedPayload = JSON.stringify(
@@ -58,10 +59,36 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({
     2
   );
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(formattedPayload);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleCopy = async () => {
+    let didCopy = false;
+
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(formattedPayload);
+        didCopy = true;
+      }
+    } catch {
+      // Fall back for browsers or origins where Clipboard API access is denied.
+    }
+
+    if (!didCopy) {
+      const textarea = document.createElement('textarea');
+      textarea.value = formattedPayload;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      didCopy = document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+
+    setCopied(didCopy);
+    setCopyFailed(!didCopy);
+    setTimeout(() => {
+      setCopied(false);
+      setCopyFailed(false);
+    }, 2000);
   };
 
   const handleDownloadJson = () => {
@@ -100,13 +127,15 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({
                 type="button"
                 onClick={handleCopy}
                 className="inline-flex items-center gap-1 px-2.5 py-1 text-[11px] font-medium text-[#202020] bg-white border border-[#D4D4D4] hover:bg-[#F5F5F5] rounded transition-colors cursor-pointer"
-                title="Copy formatted JSON to clipboard"
+                title={copyFailed ? 'Copy failed; select and copy the JSON manually' : 'Copy formatted JSON to clipboard'}
               >
                 {copied ? (
                   <>
                     <Check className="w-3 h-3 text-emerald-600" />
                     <span>Copied!</span>
                   </>
+                ) : copyFailed ? (
+                  <span className="text-red-600">Copy failed</span>
                 ) : (
                   <>
                     <Copy className="w-3 h-3 text-[#666666]" />
