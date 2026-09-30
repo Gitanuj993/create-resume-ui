@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://create-resumes.vercel.app/sitemap.xml
