@@ -1,17 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "destination": "https://create-resumes.vercel.app/:path*",
-      "permanent": true,
-      "has": [
-        {
-          "type": "host",
-          "value": "create-resume-ui.vercel.app"
-        }
-      ]
-    }
-  ],
+  
   "rewrites": [
     {
       "source": "/resume/:path*",
