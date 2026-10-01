@@ -1,34 +1,23 @@
 import React, { useState } from 'react';
 import { 
-  Printer, 
   ZoomIn, 
   ZoomOut, 
   RotateCcw, 
   ExternalLink, 
   Maximize2,
   Minimize2,
-  Download,
-  Loader2
 } from 'lucide-react';
 import { ResumeData, ReorderableSection } from '../types/resume';
 
 interface ResumePreviewProps {
   data: ResumeData;
-  onGeneratePdf?: () => void;
-  isGenerating?: boolean;
 }
 
 export const ResumePreview: React.FC<ResumePreviewProps> = ({
   data,
-  onGeneratePdf,
-  isGenerating,
 }) => {
   const [zoom, setZoom] = useState<number>(100);
   const [isExpandedFull, setIsExpandedFull] = useState<boolean>(false);
-
-  const handlePrint = () => {
-    window.print();
-  };
 
   const handleZoomIn = () => setZoom((prev) => Math.min(prev + 10, 130));
   const handleZoomOut = () => setZoom((prev) => Math.max(prev - 10, 70));
@@ -306,16 +295,6 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
             </button>
           </div>
 
-          {/* Direct Print */}
-          <button
-            type="button"
-            onClick={handlePrint}
-            className="p-1.5 text-[#666666] hover:text-[#202020] hover:bg-[#F5F5F5] rounded-md border border-[#E0E0E0] transition-colors cursor-pointer"
-            title="Print or Save PDF directly from browser"
-          >
-            <Printer className="w-3.5 h-3.5" />
-          </button>
-
           {/* Full-screen expander */}
           <button
             type="button"
@@ -326,23 +305,6 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
             {isExpandedFull ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
           </button>
 
-          {/* Quick PDF button */}
-          {onGeneratePdf && (
-            <button
-              type="button"
-              onClick={onGeneratePdf}
-              disabled={isGenerating}
-              className="ml-1 inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold text-white bg-[#2B2B2B] hover:bg-[#1A1A1A] rounded-md transition-colors shadow-2xs cursor-pointer disabled:opacity-50"
-              title="Generate PDF file"
-            >
-              {isGenerating ? (
-                <Loader2 className="w-3 h-3 animate-spin" />
-              ) : (
-                <Download className="w-3 h-3" />
-              )}
-              <span className="hidden sm:inline">PDF</span>
-            </button>
-          )}
         </div>
       </div>
 

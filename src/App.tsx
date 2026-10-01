@@ -276,8 +276,6 @@ export default function App() {
         isSaved={isSaved}
         isPreviewVisible={isPreviewVisible}
         onTogglePreview={() => setIsPreviewVisible(!isPreviewVisible)}
-        onGeneratePdf={() => handleGeneratePdf()}
-        isGenerating={isGenerating}
         onLoadSample={handleLoadSample}
         onReset={handleReset}
       />
@@ -303,8 +301,6 @@ export default function App() {
           <aside className="w-full lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-3 sm:p-4 shrink-0 flex flex-col h-[600px] lg:h-[calc(100vh-64px)] sticky top-16">
             <ResumePreview
               data={resumeData}
-              onGeneratePdf={() => handleGeneratePdf()}
-              isGenerating={isGenerating}
             />
           </aside>
         )}
@@ -322,14 +318,6 @@ export default function App() {
             className="px-3 py-1.5 text-xs font-medium rounded-md bg-[#F5F5F5] border border-[#D4D4D4] text-[#202020]"
           >
             {isPreviewVisible ? 'Hide Preview' : 'Show Preview'}
-          </button>
-          <button
-            type="button"
-            onClick={() => handleGeneratePdf()}
-            disabled={isGenerating}
-            className="px-3.5 py-1.5 text-xs font-semibold rounded-md bg-[#2B2B2B] text-white"
-          >
-            {isGenerating ? 'Generating...' : 'PDF'}
           </button>
         </div>
       </div>

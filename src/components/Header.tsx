@@ -4,10 +4,8 @@ import {
   Check, 
   Eye, 
   EyeOff, 
-  Download, 
   RotateCcw, 
-  Sparkles,
-  Loader2
+  Sparkles
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -16,8 +14,6 @@ interface HeaderProps {
   isSaved: boolean;
   isPreviewVisible: boolean;
   onTogglePreview: () => void;
-  onGeneratePdf: () => void;
-  isGenerating: boolean;
   onLoadSample: () => void;
   onReset: () => void;
 }
@@ -28,8 +24,6 @@ export const Header: React.FC<HeaderProps> = ({
   isSaved,
   isPreviewVisible,
   onTogglePreview,
-  onGeneratePdf,
-  isGenerating,
   onLoadSample,
   onReset,
 }) => {
@@ -126,25 +120,6 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </button>
 
-          {/* Primary Action: Generate Resume */}
-          <button
-            type="button"
-            onClick={onGeneratePdf}
-            disabled={isGenerating}
-            className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-[#2B2B2B] hover:bg-[#1A1A1A] active:bg-black rounded-md shadow-xs transition-colors disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
-          >
-            {isGenerating ? (
-              <>
-                <Loader2 className="w-3.5 h-3.5 animate-spin text-[#E5E5E5]" />
-                <span>Generating...</span>
-              </>
-            ) : (
-              <>
-                <Download className="w-3.5 h-3.5 text-[#E5E5E5]" />
-                <span>Generate Resume</span>
-              </>
-            )}
-          </button>
         </div>
       </div>
     </header>
