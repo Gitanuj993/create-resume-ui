@@ -11,7 +11,7 @@ const footerLinks = [
 const socialLinks = [
   { label: 'GitHub', href: 'https://github.com/Gitanuj993/create-resume-ui', icon: Github },
   { label: 'Instagram', href: '#instagram', icon: Instagram },
-  { label: 'LinkedIn', href: '#linkedin', icon: Linkedin },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/gitanuj993', icon: Linkedin },
   { label: 'Email', href: '#contact-us', icon: Mail },
 ];
 
