@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-[#C4C4C4]">
-              Build a polished, professional resume with a guided workspace designed to keep your story clear.
+              Build a polished, professional resume for software professionals, designed to keep your story clear.
             </p>
           </div>
 
