@@ -44,10 +44,10 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
             <div className="flex flex-col">
               <span className="text-base font-bold tracking-tight text-[#202020] leading-none">
-                ResumeForge
+                Create-Resumes
               </span>
               <span className="text-[11px] text-[#8A8A8A] font-medium tracking-wide">
-                Silver Edition
+                a resume builder
               </span>
             </div>
           </div>
