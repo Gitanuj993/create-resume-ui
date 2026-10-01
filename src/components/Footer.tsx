@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { FileText, Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const footerLinks = [
   { label: 'About Us', href: '#about-us' },
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
           <div className="max-w-sm">
             <div className="flex items-center gap-2.5">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-[#202020] shadow-sm">
-                <span className="text-sm font-bold">CR</span>
+                <FileText className="h-4 w-4" aria-hidden="true" />
               </div>
               <span className="text-base font-bold tracking-tight text-white">
                 Create-Resumes
