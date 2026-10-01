@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
                   key={label}
                   href={href}
                   aria-label={label}
-                  title={label === 'Email' ? 'Email anujtawar42@gmail.com' : `${label} (coming soon)`}
+                  title={label}
                   className="flex h-9 w-9 items-center justify-center rounded-md border border-[#666666] text-[#D4D4D4] transition-colors hover:border-[#A3A3A3] hover:bg-white/10 hover:text-white"
                 >
                   <Icon className="h-4 w-4" />
