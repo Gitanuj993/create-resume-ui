@@ -10,8 +10,8 @@ const footerLinks = [
 
 const socialLinks = [
   { label: 'GitHub', href: 'https://github.com/Gitanuj993/create-resume-ui', icon: Github },
-  ,{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/gitanuj993', icon: Linkedin },
-  { label: 'Email', href: '#contact-us', icon: Mail },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/gitanuj993', icon: Linkedin },
+  { label: 'Email', href: 'mailto:anujtawar42@gmail.com', icon: Mail },
   { label: 'Instagram', href: 'https://www.instagram.com/_limitless_anuj_v4.0.1/', icon: Instagram },
 ];
 
@@ -61,16 +61,14 @@ export const Footer: React.FC = () => {
                   key={label}
                   href={href}
                   aria-label={label}
-                  title={`${label} (coming soon)`}
+                  title={label === 'Email' ? 'Email anujtawar42@gmail.com' : `${label} (coming soon)`}
                   className="flex h-9 w-9 items-center justify-center rounded-md border border-[#666666] text-[#D4D4D4] transition-colors hover:border-[#A3A3A3] hover:bg-white/10 hover:text-white"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
               ))}
             </div>
-            <p className="mt-3 text-xs text-[#A3A3A3]">
-              Social profiles coming soon.
-            </p>
+           
           </div>
         </div>
 
