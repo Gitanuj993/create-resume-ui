@@ -55,14 +55,14 @@ export const Header: React.FC<HeaderProps> = ({
               value={resumeTitle}
               onChange={(e) => onResumeTitleChange(e.target.value)}
               placeholder="Untitled Resume"
-              className="text-sm font-medium text-[#202020] bg-transparent border border-transparent hover:border-[#D4D4D4] focus:border-[#2B2B2B] focus:bg-[#F5F5F5] rounded px-2 py-1 outline-hidden transition-colors w-52 truncate"
+              className="text-sm font-medium text-[#202020] bg-transparent border border-transparent hover:border-[#D4D4D4] focus:border-[#2B2B2B] focus:bg-[#F5F5F5] rounded px-2 py-1 outline-hidden flex-1 min-w-0 transition-colors"
               title="Click to rename resume"
             />
           </div>
         </div>
 
         {/* Right: Actions */}
-        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 shrink-0 flex-wrap justify-end">
           {/* Save status */}
           <div className="hidden lg:flex items-center gap-1.5 text-xs text-[#666666] font-medium mr-1">
             {isSaved ? (
@@ -79,28 +79,29 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={onLoadSample}
-            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#202020] bg-[#F5F5F5] hover:bg-[#E5E5E5] border border-[#D4D4D4] rounded-md transition-colors"
+            className="inline-flex items-center gap-1 px-2 sm:px-3 py-1.5 text-xs font-medium text-[#202020] bg-[#F5F5F5] hover:bg-[#E5E5E5] border border-[#D4D4D4] rounded-md transition-colors"
             title="Load comprehensive sample data (Anuj Tanwar)"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#666666]" />
-            <span>Sample Data</span>
+            <Sparkles className="w-3.5 h-3.5 text-[#666666] flex-shrink-0" />
+            <span className="hidden sm:inline">Sample Data</span>
+            <span className="sm:hidden">Sample</span>
           </button>
 
           <button
             type="button"
             onClick={onReset}
-            className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-[#666666] hover:text-[#202020] hover:bg-[#F5F5F5] rounded-md transition-colors"
+            className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-1.5 text-xs font-medium text-[#666666] hover:text-[#202020] hover:bg-[#F5F5F5] rounded-md transition-colors"
             title="Clear all fields to blank template"
           >
-            <RotateCcw className="w-3.5 h-3.5" />
-            <span className="hidden xl:inline">Reset</span>
+            <RotateCcw className="w-3.5 h-3.5 flex-shrink-0" />
+            <span className="hidden sm:inline">Reset</span>
           </button>
 
           {/* Preview Toggle */}
           <button
             type="button"
             onClick={onTogglePreview}
-            className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md border transition-colors ${
+            className={`inline-flex items-center gap-1 px-2 sm:px-3 py-1.5 text-xs font-medium rounded-md border transition-colors ${
               isPreviewVisible 
                 ? 'bg-[#E5E5E5] text-[#202020] border-[#D4D4D4]' 
                 : 'bg-white text-[#666666] hover:text-[#202020] border-[#D4D4D4] hover:bg-[#F5F5F5]'
@@ -109,12 +110,12 @@ export const Header: React.FC<HeaderProps> = ({
           >
             {isPreviewVisible ? (
               <>
-                <EyeOff className="w-3.5 h-3.5 text-[#666666]" />
+                <EyeOff className="w-3.5 h-3.5 text-[#666666] flex-shrink-0" />
                 <span className="hidden sm:inline">Hide Preview</span>
               </>
             ) : (
               <>
-                <Eye className="w-3.5 h-3.5 text-[#666666]" />
+                <Eye className="w-3.5 h-3.5 text-[#666666] flex-shrink-0" />
                 <span className="hidden sm:inline">Preview</span>
               </>
             )}
