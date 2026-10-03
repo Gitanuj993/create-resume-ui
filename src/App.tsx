@@ -7,6 +7,7 @@ import {
   SAMPLE_RESUME_DATA 
 } from './types/resume';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 import { ProgressSidebar } from './components/ProgressSidebar';
 import { ResumePreview } from './components/ResumePreview';
 
@@ -321,6 +322,8 @@ export default function App() {
           </button>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
