@@ -30,7 +30,7 @@ const STORAGE_KEY = 'resumeforge_data_v1';
 const TITLE_STORAGE_KEY = 'resumeforge_title_v1';
 
 export default function App() {
-  // Load initial resume data from localStorage or default to sample data for immediate visual joy
+  // Load initial resume data from localStorage or default to empty template
   const [resumeData, setResumeData] = useState<ResumeData>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -40,14 +40,14 @@ export default function App() {
     } catch {
       // Ignore parse error and fallback
     }
-    return SAMPLE_RESUME_DATA;
+    return INITIAL_RESUME_DATA;
   });
 
   const [resumeTitle, setResumeTitle] = useState<string>(() => {
     try {
-      return localStorage.getItem(TITLE_STORAGE_KEY) || 'Software Engineer Resume';
+      return localStorage.getItem(TITLE_STORAGE_KEY) || 'Untitled Resume';
     } catch {
-      return 'Software Engineer Resume';
+      return 'Untitled Resume';
     }
   });
 
@@ -299,7 +299,7 @@ export default function App() {
 
         {/* Right: Live Resume Preview Panel (Desktop-first) */}
         {isPreviewVisible && (
-          <aside className="w-full lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-3 sm:p-4 shrink-0 flex flex-col h-[600px] lg:h-[calc(100vh-64px)] sticky top-16">
+          <aside className="w-full lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-3 sm:p-4 shrink-0 flex flex-col h-[600px] lg:h-[calc(100vh-88px)] overflow-hidden">
             <ResumePreview
               data={resumeData}
             />
