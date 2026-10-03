@@ -301,9 +301,9 @@ export default function App() {
           </main>
         )}
 
-        {/* Right: Live Resume Preview Panel - Full width on mobile when visible */}
+        {/* Right: Live Resume Preview Panel - 50% width on desktop */}
         {isPreviewVisible && (
-          <aside className="flex-1 lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-2 sm:p-3 lg:p-4 shrink-0 flex flex-col h-[500px] sm:h-[600px] lg:h-[calc(100vh-88px)]">
+          <aside className="flex-1 bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-2 sm:p-3 lg:p-4 shrink-0 flex flex-col h-[500px] sm:h-[600px] lg:h-[calc(100vh-88px)]">
             <ResumePreview
               data={resumeData}
             />
@@ -312,7 +312,7 @@ export default function App() {
 
         {/* Fallback: Show both on desktop */}
         {!isPreviewVisible && (
-          <aside className="hidden lg:flex flex-1 lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-l border-[#D4D4D4] p-4 shrink-0 flex-col h-[calc(100vh-88px)]">
+          <aside className="hidden lg:flex flex-1 bg-white border-l border-[#D4D4D4] p-4 shrink-0 flex-col h-[calc(100vh-88px)]">
             <ResumePreview
               data={resumeData}
             />
