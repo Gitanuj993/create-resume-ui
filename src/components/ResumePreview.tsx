@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   ZoomIn, 
   ZoomOut, 
@@ -18,10 +18,20 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
 }) => {
   const [zoom, setZoom] = useState<number>(100);
   const [isExpandedFull, setIsExpandedFull] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1024);
+
+  // Detect screen size changes
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleZoomIn = () => setZoom((prev) => Math.min(prev + 10, 130));
-  const handleZoomOut = () => setZoom((prev) => Math.max(prev - 10, 70));
-  const handleResetZoom = () => setZoom(100);
+  const handleZoomOut = () => setZoom((prev) => Math.max(prev - 10, 50));
+  const handleResetZoom = () => setZoom(isMobile ? 60 : 100);
 
   const {
     full_name,
@@ -253,7 +263,7 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
       isExpandedFull ? 'fixed inset-4 z-50 shadow-2xl' : 'h-full shadow-xs'
     }`}>
       {/* Preview Toolbar */}
-      <div className="bg-white border-b border-[#D4D4D4] px-4 py-2.5 flex items-center justify-between gap-2 shrink-0 select-none">
+      <div className="bg-white border-b border-[#D4D4D4] px-3 sm:px-4 py-2 flex items-center justify-between gap-2 shrink-0 select-none flex-wrap">
         <div className="flex items-center gap-2">
           <span className="text-xs font-bold text-[#202020] uppercase tracking-wider">
             Live Preview
@@ -263,7 +273,7 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
           </span>
         </div>
 
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1">
           {/* Zoom controls */}
           <div className="flex items-center bg-[#F5F5F5] rounded-md border border-[#E0E0E0] p-0.5 text-xs text-[#666666]">
             <button
@@ -274,7 +284,7 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
             >
               <ZoomOut className="w-3.5 h-3.5" />
             </button>
-            <span className="px-1.5 font-mono text-[11px] text-[#202020] tabular-nums">
+            <span className="px-1 sm:px-1.5 font-mono text-[10px] sm:text-[11px] text-[#202020] tabular-nums">
               {zoom}%
             </span>
             <button
@@ -289,7 +299,7 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
               type="button"
               onClick={handleResetZoom}
               className="p-1 hover:text-[#202020] rounded hover:bg-white transition-colors cursor-pointer ml-0.5"
-              title="Reset zoom to 100%"
+              title="Reset zoom"
             >
               <RotateCcw className="w-3 h-3" />
             </button>
@@ -309,13 +319,13 @@ export const ResumePreview: React.FC<ResumePreviewProps> = ({
       </div>
 
       {/* Preview Scrollable Canvas */}
-      <div className="flex-1 overflow-auto p-4 sm:p-6 flex justify-center items-start bg-[#EAEAEA]">
+      <div className="flex-1 overflow-auto p-2 sm:p-4 flex justify-center items-start bg-[#EAEAEA]">
         <div 
           style={{ transform: `scale(${zoom / 100})`, transformOrigin: 'top center' }}
           className="transition-transform duration-150"
         >
           {/* Printable A4 Paper Sheet */}
-          <div className="resume-paper w-[595px] min-h-[842px] bg-white text-[#202020] p-10 shadow-lg border border-[#D4D4D4] rounded-sm select-text font-serif">
+          <div className="resume-paper w-[595px] min-h-[842px] bg-white text-[#202020] p-8 sm:p-10 shadow-lg border border-[#D4D4D4] rounded-sm select-text font-serif">
             {/* Header / Name */}
             <div className="text-center mb-3">
               <h1 className="text-2xl font-bold tracking-tight text-[#1A1A1A] font-sans uppercase">
