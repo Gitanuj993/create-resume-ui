@@ -283,23 +283,36 @@ export default function App() {
 
       {/* Main Workspace Area */}
       <div className="flex-1 max-w-[1600px] w-full mx-auto flex flex-col lg:flex-row">
-        {/* Left: Compact Step Navigation Sidebar */}
-        <ProgressSidebar
-          currentStep={currentStep}
-          onSelectStep={(s) => setCurrentStep(s)}
-          resumeData={resumeData}
-        />
+        {/* Left: Compact Step Navigation Sidebar - Hidden on mobile */}
+        <div className="hidden lg:block">
+          <ProgressSidebar
+            currentStep={currentStep}
+            onSelectStep={(s) => setCurrentStep(s)}
+            resumeData={resumeData}
+          />
+        </div>
 
-        {/* Center: Current Form */}
-        <main className="flex-1 p-4 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
-          <div className="max-w-3xl mx-auto">
-            {renderCurrentForm()}
-          </div>
-        </main>
+        {/* Center: Current Form - Full width on mobile when preview is hidden */}
+        {!isPreviewVisible && (
+          <main className="flex-1 p-4 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
+            <div className="max-w-3xl mx-auto">
+              {renderCurrentForm()}
+            </div>
+          </main>
+        )}
 
-        {/* Right: Live Resume Preview Panel (Desktop-first) */}
+        {/* Right: Live Resume Preview Panel - Full width on mobile when visible */}
         {isPreviewVisible && (
-          <aside className="w-full lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-3 sm:p-4 shrink-0 flex flex-col h-[600px] lg:h-[calc(100vh-88px)] overflow-hidden">
+          <aside className="flex-1 lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-2 sm:p-3 lg:p-4 shrink-0 flex flex-col h-[500px] sm:h-[600px] lg:h-[calc(100vh-88px)]">
+            <ResumePreview
+              data={resumeData}
+            />
+          </aside>
+        )}
+
+        {/* Fallback: Show both on desktop */}
+        {!isPreviewVisible && (
+          <aside className="hidden lg:flex flex-1 lg:w-[480px] xl:w-[540px] 2xl:w-[620px] bg-white border-l border-[#D4D4D4] p-4 shrink-0 flex-col h-[calc(100vh-88px)]">
             <ResumePreview
               data={resumeData}
             />
