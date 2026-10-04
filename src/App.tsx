@@ -52,7 +52,7 @@ export default function App() {
   });
 
   const [currentStep, setCurrentStep] = useState<StepId>('personal');
-  const [isPreviewVisible, setIsPreviewVisible] = useState<boolean>(true);
+  const [isPreviewVisible, setIsPreviewVisible] = useState<boolean>(false);
   const [isSaved, setIsSaved] = useState<boolean>(true);
   const [isGenerating, setIsGenerating] = useState<boolean>(false);
   const [toastMessage, setToastMessage] = useState<{ type: 'success' | 'error' | 'info'; text: string } | null>(null);
@@ -292,26 +292,15 @@ export default function App() {
           />
         </div>
 
-        {/* Center: Current Form - Full width on mobile when preview is hidden */}
-        {!isPreviewVisible && (
-          <main className="flex-1 p-4 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
-            <div className="max-w-3xl mx-auto">
-              {renderCurrentForm()}
-            </div>
-          </main>
-        )}
+        {/* Center: Current Form - Always visible */}
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
+          <div className="max-w-3xl mx-auto">
+            {renderCurrentForm()}
+          </div>
+        </main>
 
-        {/* Right: Live Resume Preview Panel - 50% width on desktop */}
+        {/* Right: Live Resume Preview Panel - Shown on desktop when toggled */}
         {isPreviewVisible && (
-          <aside className="flex-1 bg-white border-t lg:border-t-0 lg:border-l border-[#D4D4D4] p-2 sm:p-3 lg:p-4 shrink-0 flex flex-col h-[500px] sm:h-[600px] lg:h-[calc(100vh-88px)]">
-            <ResumePreview
-              data={resumeData}
-            />
-          </aside>
-        )}
-
-        {/* Fallback: Show both on desktop */}
-        {!isPreviewVisible && (
           <aside className="hidden lg:flex flex-1 bg-white border-l border-[#D4D4D4] p-4 shrink-0 flex-col h-[calc(100vh-88px)]">
             <ResumePreview
               data={resumeData}
@@ -319,6 +308,20 @@ export default function App() {
           </aside>
         )}
       </div>
+
+      {/* Preview Section Below Forms - Visible on all devices when not in desktop preview mode */}
+      {!isPreviewVisible && (
+        <section className="w-full bg-white border-t border-[#D4D4D4] p-4 sm:p-6 lg:p-8">
+          <div className="max-w-[1600px] mx-auto">
+            <h2 className="text-lg font-semibold text-[#202020] mb-4">Resume Preview</h2>
+            <div className="bg-white rounded-lg border border-[#D4D4D4] p-4">
+              <ResumePreview
+                data={resumeData}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Mobile Floating Preview Toggle Bar */}
       <div className="lg:hidden sticky bottom-0 bg-white/95 backdrop-blur-sm border-t border-[#D4D4D4] px-4 py-2.5 flex items-center justify-between z-30 shadow-md">
