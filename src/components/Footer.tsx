@@ -1,11 +1,13 @@
 import React from 'react';
 import { FileText, Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const footerLinks = [
-  { label: 'About Us', href: '/about' },
-  { label: 'Contact Us', href: '#contact-us' },
-  { label: 'Terms & Conditions', href: '#terms-and-conditions' },
-  { label: 'Privacy Policy', href: '#privacy-policy' },
+  { label: 'About Us', to: '/about' },
+  { label: 'FAQ', to: '/faq' },
+  { label: 'Contact', to: '/contact' },
+  { label: 'Terms of Use', to: '/terms' },
+  { label: 'Privacy', to: '/privacy' },
 ];
 
 const socialLinks = [
@@ -40,13 +42,13 @@ export const Footer: React.FC = () => {
             </h2>
             <div className="mt-3 flex flex-col items-start gap-2.5">
               {footerLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  to={link.to}
                   className="text-sm text-[#C4C4C4] transition-colors hover:text-white"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
           </nav>
