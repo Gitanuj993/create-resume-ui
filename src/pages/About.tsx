@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Infinity, Lock, Zap, Target, FileCheck, RefreshCw, Users } from 'lucide-react';
+import { Footer } from '../components/Footer';
 
 export const About: React.FC = () => {
   return (
@@ -254,12 +255,7 @@ export const About: React.FC = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-[#D4D4D4] mt-auto">
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 py-6 text-center text-xs text-[#8A8A8A]">
-          <p>© 2026 Create Resume. No sign-up required. No limits. Simple resume building.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
