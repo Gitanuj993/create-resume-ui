@@ -2,7 +2,7 @@ import React from 'react';
 import { FileText, Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const footerLinks = [
-  { label: 'About Us', href: '#about-us' },
+  { label: 'About Us', href: '/about' },
   { label: 'Contact Us', href: '#contact-us' },
   { label: 'Terms & Conditions', href: '#terms-and-conditions' },
   { label: 'Privacy Policy', href: '#privacy-policy' },

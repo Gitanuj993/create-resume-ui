@@ -257,7 +257,7 @@ export const About: React.FC = () => {
       {/* Footer */}
       <footer className="bg-white border-t border-[#D4D4D4] mt-auto">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 py-6 text-center text-xs text-[#8A8A8A]">
-          <p>© 2024 Create Resume. No sign-up required. No limits. Simple resume building.</p>
+          <p>© 2026 Create Resume. No sign-up required. No limits. Simple resume building.</p>
         </div>
       </footer>
     </div>
