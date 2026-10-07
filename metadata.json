@@ -1,6 +1,4 @@
 {
-  "name": "App Studio",
-  "description": "Interactive web application studio and workspace built with React and Tailwind CSS.",
-  "requestFramePermissions": [],
-  // "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "name": "Create Resumes",
+  "description": "Interactive web application to create professional resumes.",
 }
