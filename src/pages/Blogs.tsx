@@ -60,6 +60,12 @@ export default function Blogs() {
   // All blogs page
   return (
     <main className="max-w-5xl mx-auto px-6 py-12">
+      <Link
+              to="/"
+              className="inline-block mt-4 underline"
+            >
+              Back to Home
+            </Link>
       <h1 className="text-4xl font-bold">
         Blogs
       </h1>
