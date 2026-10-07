@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { blogs } from "../data/blogs";
+import { Footer } from '../components/Footer';
 
 export default function Blogs() {
   const { slug } = useParams();
@@ -101,6 +102,7 @@ export default function Blogs() {
           </article>
         ))}
       </div>
+      <Footer />
     </main>
   );
 }
