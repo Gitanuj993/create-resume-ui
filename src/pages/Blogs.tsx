@@ -55,6 +55,7 @@ export default function Blogs() {
           </div>
         </article>
       </main>
+      
     );
   }
 
@@ -63,7 +64,7 @@ export default function Blogs() {
     <main className="max-w-5xl mx-auto px-6 py-12">
       <Link
               to="/"
-              className="inline-block mt-4 underline"
+              className="text-sm text-gray-500 hover:text-black"
             >
               Back to Home
             </Link>
@@ -102,7 +103,6 @@ export default function Blogs() {
           </article>
         ))}
       </div>
-      <Footer />
     </main>
   );
 }
