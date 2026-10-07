@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { blogs } from "../data/blogs";
 import { Footer } from '../components/Footer';
+import ReactMarkdown from "react-markdown";
 
 export default function Blogs() {
   const { slug } = useParams();
@@ -25,7 +26,7 @@ export default function Blogs() {
               to="/blogs"
               className="inline-block mt-4 underline"
             >
-              Back to Blogs
+             ← Back to Blogs
             </Link>
           </div>
           <Footer />
@@ -42,7 +43,7 @@ export default function Blogs() {
           ← Back to Blogs
         </Link>
 
-        <article className="mt-8">
+        <article className="mt-8 prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold">
             {selectedBlog.title}
           </h1>
@@ -52,7 +53,10 @@ export default function Blogs() {
           </p>
 
           <div className="mt-8 leading-8 whitespace-pre-line">
+            <ReactMarkdown>
             {selectedBlog.content}
+            </ReactMarkdown>
+            
           </div>
         </article>
       
