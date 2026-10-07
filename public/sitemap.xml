@@ -3,4 +3,19 @@
   <url>
     <loc>https://create-resumes.vercel.app/</loc>
   </url>
-</urlset> 
+  <url>
+    <loc>https://create-resumes.vercel.app/about</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/faq</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/privacy</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/terms</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/contact</loc>
+  </url>
+</urlset>
