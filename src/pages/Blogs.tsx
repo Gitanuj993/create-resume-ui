@@ -55,7 +55,7 @@ export default function Blogs() {
             {selectedBlog.content}
           </div>
         </article>
-        <Footer />
+      
       </main>
       
       
