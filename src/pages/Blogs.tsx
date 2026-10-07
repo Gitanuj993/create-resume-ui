@@ -28,6 +28,7 @@ export default function Blogs() {
               Back to Blogs
             </Link>
           </div>
+          <Footer />
         </div>
       );
     }
@@ -55,6 +56,7 @@ export default function Blogs() {
           </div>
         </article>
       </main>
+      <Footer />
       
     );
   }
@@ -66,7 +68,7 @@ export default function Blogs() {
               to="/"
               className="text-sm text-gray-500 hover:text-black"
             >
-              Back to Home
+             ← Back to Home
             </Link>
       <h1 className="text-4xl font-bold">
         Blogs
