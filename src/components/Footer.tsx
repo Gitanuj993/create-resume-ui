@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
 
         <div className="mt-8 flex flex-col gap-2 border-t border-white/15 pt-4 text-xs text-[#A3A3A3] sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Create-Resumes. All rights reserved.</p>
-          <p>Made for better career stories.</p>
+          <p> Made with 🧡 from India.</p>
         </div>
       </div>
     </footer>
