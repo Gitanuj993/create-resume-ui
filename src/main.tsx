@@ -20,6 +20,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blogs" element={<Blogs />} />
+      <Route path="/blogs/:slug" element={<Blogs />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
