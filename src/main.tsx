@@ -7,6 +7,7 @@ import { Contact } from './pages/Contact';
 import { Faq } from './pages/Faq';
 import { Privacy } from './pages/Privacy';
 import { Terms } from './pages/Terms';
+import Blogs from "./pages/Blogs";
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
