@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const footerLinks = [
   { label: 'About Us', to: '/about' },
+  { label: 'Blogs', to: '/blogs' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Contact', to: '/contact' },
   { label: 'Terms of Use', to: '/terms' },
