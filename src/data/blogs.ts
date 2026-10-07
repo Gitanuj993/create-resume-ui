@@ -7,304 +7,216 @@ export interface Blog {
 }
 
 export const blogs: Blog[] = [
+
   {
-    
   slug: "how-to-create-a-resume-with-no-work-experience",
   title: "How to Create a Resume With No Work Experience",
-  description: "Learn how to create a strong resume with no formal work experience by highlighting your education, skills, projects, certifications, and potential.",
+  description: "Learn how to create a professional resume even when you have no formal work experience.",
   content: `
-    <h2>How to Create a Resume With No Work Experience</h2>
+# How to Create a Resume With No Work Experience
 
-    <p>
-      Creating a resume without work experience can feel difficult. Many job
-      descriptions ask for experience, while students and fresh graduates are
-      still trying to get their first opportunity. But a lack of formal work
-      experience does not mean there is nothing valuable to put on a resume.
-    </p>
+Creating a resume without work experience can feel difficult. Many job descriptions ask for experience, while students and recent graduates are still trying to get their first opportunity.
 
-    <p>
-      A strong entry-level resume focuses on what you <strong>can do</strong>,
-      what you have <strong>built or learned</strong>, and how your skills can
-      contribute to the organization.
-    </p>
+The good news is that **no work experience does not mean no experience at all**.
 
-    <h2>1. Start With a Clear Resume Header</h2>
+Projects, education, technical skills, certifications, volunteering, and personal achievements can all demonstrate your ability.
 
-    <p>
-      Your name should be easy to find at the top of the resume. Under your
-      name, include your contact information and relevant professional links.
-    </p>
+## 1. Start With a Clear Header
 
-    <ul>
-      <li>Full name</li>
-      <li>Phone number</li>
-      <li>Professional email address</li>
-      <li>City and country</li>
-      <li>LinkedIn profile</li>
-      <li>GitHub or portfolio, if relevant</li>
-    </ul>
+Your name should be easy to find at the top of your resume.
 
-    <p>
-      Avoid unnecessary personal information such as your full home address,
-      photograph, religion, or other details that are not relevant to the job.
-    </p>
+Include:
 
-    <h2>2. Write a Strong Resume Summary</h2>
+- Full name
+- Professional email address
+- Phone number
+- Location
+- LinkedIn profile
+- GitHub or portfolio
 
-    <p>
-      A resume summary gives recruiters a quick idea of who you are and what
-      you bring to the table.
-    </p>
+Avoid unnecessary personal information that does not help the recruiter evaluate your qualifications.
 
-    <p>
-      Since you do not have formal work experience, focus on your education,
-      technical skills, projects, and career direction.
-    </p>
+## 2. Write a Strong Resume Summary
 
-    <p>
-      For example:
-    </p>
+Your summary should quickly explain who you are, what you know, and what type of opportunity you are looking for.
 
-    <blockquote>
-      Computer Science student with a strong foundation in Python, JavaScript,
-      SQL, and data structures. Experienced in building academic and personal
-      projects and interested in backend development and software engineering.
-      Seeking an entry-level opportunity to apply technical skills to real-world
-      problems.
-    </blockquote>
+For example:
 
-    <p>
-      Keep the summary specific. Saying that you are a "hard-working,
-      passionate, motivated individual" without evidence is not particularly
-      useful. Almost every resume says it.
-    </p>
+> Computer Science student with a strong foundation in Python, JavaScript, SQL, and data structures. Experienced in building academic and personal projects and interested in backend development and software engineering.
 
-    <h2>3. Put Education in a Prominent Position</h2>
+Keep it short and specific.
 
-    <p>
-      If you are a student or recent graduate, education is one of your most
-      important sections.
-    </p>
+Avoid generic statements such as:
 
-    <p>Include:</p>
+> "I am a hardworking, passionate and motivated individual."
 
-    <ul>
-      <li>Degree or qualification</li>
-      <li>University or college</li>
-      <li>Graduation year or expected graduation year</li>
-      <li>Relevant coursework</li>
-      <li>CGPA or percentage, if it strengthens your application</li>
-    </ul>
+Almost every resume says this. Recruiters have probably developed immunity.
 
-    <p>
-      You can also mention relevant subjects such as Data Structures,
-      Database Management Systems, Operating Systems, Computer Networks,
-      Machine Learning, or Software Engineering when they match the job.
-    </p>
+## 3. Make Your Education Work for You
 
-    <h2>4. Projects Can Replace Missing Work Experience</h2>
+When you have limited professional experience, education becomes more important.
 
-    <p>
-      This is one of the most important sections for a fresher. Real projects
-      demonstrate practical ability far better than simply listing technologies.
-    </p>
+Include:
 
-    <p>
-      Include personal, academic, open-source, freelance, or college projects.
-      A project does not need to be used by thousands of people to be valuable.
-      It needs to demonstrate that you can solve a problem and actually build
-      something.
-    </p>
+- Degree
+- College or university
+- Expected graduation year
+- CGPA or percentage, if useful
+- Relevant coursework
 
-    <p>For each project, mention:</p>
+For technical positions, relevant subjects could include:
 
-    <ul>
-      <li>Project name</li>
-      <li>What problem it solves</li>
-      <li>Technologies used</li>
-      <li>Your contribution</li>
-      <li>Important features</li>
-      <li>GitHub or live demo link, if available</li>
-    </ul>
+- Data Structures and Algorithms
+- Database Management Systems
+- Operating Systems
+- Computer Networks
+- Software Engineering
+- Machine Learning
 
-    <p>
-      Instead of writing:
-    </p>
+## 4. Use Projects as Your Practical Experience
 
-    <blockquote>
-      Created a website using React.
-    </blockquote>
+Projects are one of the strongest ways to demonstrate your abilities when you have no formal employment history.
 
-    <p>
-      Write something more specific:
-    </p>
+You can include:
 
-    <blockquote>
-      Built a React-based resume generation platform that allows users to
-      create and export professional resumes without creating an account.
-      Integrated a FastAPI backend for resume processing and PDF generation.
-    </blockquote>
+- Personal projects
+- College projects
+- Open-source contributions
+- Freelance projects
+- Hackathon projects
 
-    <p>
-      The second version gives the recruiter something concrete to evaluate.
-      Humans remain strangely fond of evidence.
-    </p>
+For each project, explain:
 
-    <h2>5. Highlight Relevant Technical Skills</h2>
+1. What problem the project solves
+2. What technologies you used
+3. What you personally built
+4. Important features
+5. Results or measurable outcomes
+6. GitHub or live demo
 
-    <p>
-      Create a dedicated skills section that is easy to scan.
-    </p>
+Instead of writing:
 
-    <p>For example:</p>
+> Created a website using React.
 
-    <ul>
-      <li><strong>Programming:</strong> Python, C++, JavaScript</li>
-      <li><strong>Web:</strong> React, HTML, CSS, Tailwind CSS</li>
-      <li><strong>Backend:</strong> FastAPI, REST APIs</li>
-      <li><strong>Databases:</strong> PostgreSQL, SQL</li>
-      <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
-    </ul>
+Write:
 
-    <p>
-      Do not list every technology you have ever opened in a browser tab.
-      Include skills that you actually understand and that are relevant to the
-      position.
-    </p>
+> Built a React-based resume generation platform that allows users to create and export professional resumes without creating an account.
 
-    <h2>6. Include Certifications and Courses Carefully</h2>
+The second statement tells the recruiter something they can actually evaluate.
 
-    <p>
-      Certifications can strengthen an entry-level resume, particularly when
-      they demonstrate knowledge that is relevant to the position.
-    </p>
+## 5. Highlight Relevant Skills
 
-    <p>
-      Include the certification name, issuing organization, and completion
-      date when useful.
-    </p>
+Create a dedicated skills section.
 
-    <p>
-      However, certifications should support your skills rather than replace
-      practical experience. Completing ten beginner courses does not
-      automatically demonstrate professional-level expertise.
-    </p>
+For example:
 
-    <h2>7. Add Achievements and Activities</h2>
+**Programming:** Python, C++, JavaScript
 
-    <p>
-      If you have achievements that demonstrate useful skills, consider adding
-      them to the resume.
-    </p>
+**Frontend:** React, HTML, CSS, Tailwind CSS
 
-    <ul>
-      <li>Hackathons</li>
-      <li>Coding competitions</li>
-      <li>Open-source contributions</li>
-      <li>Technical events</li>
-      <li>Academic achievements</li>
-      <li>Leadership responsibilities</li>
-      <li>Relevant volunteering</li>
-    </ul>
+**Backend:** FastAPI, REST APIs
 
-    <p>
-      Focus on achievements that demonstrate skills such as problem-solving,
-      teamwork, leadership, communication, or technical ability.
-    </p>
+**Database:** PostgreSQL, SQL
 
-    <h2>8. Use Your GitHub or Portfolio as Evidence</h2>
+**Tools:** Git, GitHub, VS Code
 
-    <p>
-      For technical roles, a GitHub profile or portfolio can make a significant
-      difference when you do not have professional experience.
-    </p>
+Only include skills that you can actually explain during an interview.
 
-    <p>
-      Keep your repositories organized and make sure important projects have
-      useful README files explaining what the project does, how it works, and
-      how someone can run it.
-    </p>
+Listing 30 technologies that were used once in a YouTube tutorial is not a technical skill set.
 
-    <p>
-      A recruiter should be able to understand your project without having to
-      perform digital archaeology through your repository.
-    </p>
+## 6. Add Certifications and Courses
 
-    <h2>9. Keep the Resume Short and Relevant</h2>
+Certifications can strengthen an entry-level resume when they are relevant to the position.
 
-    <p>
-      For most students and fresh graduates, a one-page resume is usually
-      enough.
-    </p>
+Include:
 
-    <p>
-      Remove information that does not help the recruiter understand your
-      qualifications. More content does not automatically mean a better
-      resume.
-    </p>
+- Certification name
+- Issuing organization
+- Completion date
 
-    <p>
-      Prioritize:
-    </p>
+However, certifications should support practical skills rather than replace them.
 
-    <ol>
-      <li>Relevant skills</li>
-      <li>Strong projects</li>
-      <li>Education</li>
-      <li>Relevant certifications</li>
-      <li>Achievements</li>
-    </ol>
+A recruiter is generally more interested in what you can build than in how many beginner courses you completed.
 
-    <h2>10. Tailor Your Resume for Each Job</h2>
+## 7. Include Relevant Achievements
 
-    <p>
-      Avoid sending exactly the same resume to every company.
-    </p>
+Consider adding achievements such as:
 
-    <p>
-      Read the job description and identify the skills, technologies, and
-      responsibilities the employer is looking for. Then make sure your
-      relevant experience, projects, and skills are clearly visible.
-    </p>
+- Hackathon participation
+- Coding competition results
+- Open-source contributions
+- Academic achievements
+- Technical events
+- Leadership positions
+- Relevant volunteering
 
-    <p>
-      For example, a backend developer position may prioritize Python,
-      FastAPI, databases, REST APIs, and system design, while a frontend
-      position may prioritize React, JavaScript, CSS, and UI development.
-    </p>
+Focus on achievements that demonstrate useful qualities such as problem-solving, teamwork, leadership, or technical ability.
 
-    <h2>Common Mistakes to Avoid</h2>
+## 8. Add Your GitHub or Portfolio
 
-    <ul>
-      <li>Using a generic objective statement</li>
-      <li>Listing skills that you cannot explain in an interview</li>
-      <li>Adding irrelevant personal information</li>
-      <li>Writing long paragraphs instead of concise bullet points</li>
-      <li>Using complicated designs that reduce readability</li>
-      <li>Including fake experience or exaggerated achievements</li>
-      <li>Submitting the same resume for every job</li>
-      <li>Ignoring spelling and formatting errors</li>
-    </ul>
+For technical jobs, a GitHub profile or portfolio can provide evidence of your skills.
 
-    <h2>Final Thoughts</h2>
+Make sure your repositories contain:
 
-    <p>
-      Not having formal work experience is normal when starting a career.
-      The goal of an entry-level resume is not to pretend that you have
-      professional experience. It is to demonstrate that you have the
-      knowledge, skills, projects, and potential required to become a valuable
-      employee.
-    </p>
+- Clear README files
+- Meaningful project descriptions
+- Installation instructions
+- Screenshots where useful
+- Clean and understandable code
 
-    <p>
-      Build meaningful projects, develop relevant skills, document your work,
-      and present the evidence clearly. A well-structured resume can turn
-      limited experience into a credible starting point for your career.
-    </p>
+Your GitHub should make it easy for someone to understand what you have built.
+
+## 9. Keep Your Resume Short
+
+For most students and fresh graduates, a **one-page resume** is usually enough.
+
+Prioritize:
+
+1. Skills
+2. Projects
+3. Education
+4. Certifications
+5. Achievements
+
+Remove information that does not strengthen your application.
+
+More pages do not automatically mean more experience.
+
+## 10. Tailor Your Resume to the Job
+
+Do not send exactly the same resume to every company.
+
+Read the job description and identify:
+
+- Required technologies
+- Important skills
+- Responsibilities
+- Keywords
+
+Then make your relevant projects and skills easy to find.
+
+For example, a backend developer position may prioritize:
+
+- Python
+- FastAPI
+- REST APIs
+- SQL
+- PostgreSQL
+
+A frontend position may instead prioritize:
+
+- React
+- JavaScript
+- CSS
+- UI development
+
+Your resume should reflect the position you are applying for.
+
+
   `,
   date: "2026-10-07"
     },
-
+  
   {
     slug: "common-resume-mistakes",
     title: "Common Resume Mistakes",
