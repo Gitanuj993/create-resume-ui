@@ -262,7 +262,64 @@ Avoid unnecessary personal information that does not help the recruiter evaluate
     `,
     date: "2026-10-08",
   }, 
-  
+
+    {
+    slug: "Ways-to-write-a-good-resume-Summary",
+    title: " How to write a better Resume Summary",
+    description:
+      " Ways to write a good resume Summary.",
+    content: `
+    # Ways to write a good resume Summary
+Your summary should quickly explain who you are, what you know, and what type of opportunity you are looking for.
+
+For example:
+
+> Computer Science student with a strong foundation in Python, JavaScript, SQL, and data structures. Experienced in building academic and personal projects and interested in backend development and software engineering.
+
+Keep it short and specific.
+
+Avoid generic statements such as:
+
+> "I am a hardworking, passionate and motivated individual."
+
+Almost every resume says this. Recruiters have probably developed immunity.
+
+    `,
+    date: "2026-10-08",
+  }, 
+    {
+    slug: "Role-of-Education-Section-in-resume",
+    title: "Role of Education Section in resume",
+    description:
+      " ",
+    content: `
+    # Role of Education Section in resume
+Adding education section becomes more important,
+if you do not have an experience yet
+
+Include:
+
+- Degree
+- College or university
+- Expected graduation year
+- CGPA or percentage, if useful
+- Relevant coursework
+
+For technical positions, relevant subjects could include:
+
+- Data Structures and Algorithms
+- Database Management Systems
+- Operating Systems
+- Computer Networks
+- Software Engineering
+- Machine Learning
+
+Note : Avoid it, if your education summary is less important 
+      
+
+    `,
+    date: "2026-10-08",
+  }, 
 ];
 
   /* Boiler Plate 
