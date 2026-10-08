@@ -1,4 +1,4 @@
-# Create Resume
+# Create Resumes
 
 ![React](https://img.shields.io/badge/React-19-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6) ![Vite](https://img.shields.io/badge/Vite-5.x-646CFF)
 
