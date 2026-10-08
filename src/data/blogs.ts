@@ -238,18 +238,43 @@ Your resume should reflect the position you are applying for.
     `,
     date: "2026-10-08",
   },
+
+    {
+    slug: "How-to-write-a-clear-header",
+    title: " How to write a clear resume header ",
+    description:
+      " Guide to write header of the resume.",
+    content: `
+# How to write a clear header
+Your name should be easy to find at the top of your resume.
+
+Include:
+
+- Full name
+- Professional email address
+- Phone number
+- Location
+- LinkedIn profile
+- GitHub or portfolio
+
+Avoid unnecessary personal information that does not help the recruiter evaluate your qualifications.
+
+    `,
+    date: "2026-10-08",
+  }, 
+  
 ];
 
   /* Boiler Plate 
   {
-    slug: "common-resume-mistakes",
-    title: "Common Resume Mistakes",
+    slug: " ",
+    title: " ",
     description:
-      "Learn about common mistakes that can reduce the effectiveness of a resume.",
+      " ",
     content: `
 Write your blog content here.
 
-Add your complete article content here.
     `,
     date: "2026-10-08",
-  }, */ 
+  }, 
+  */ 
