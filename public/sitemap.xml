@@ -7,6 +7,9 @@
     <loc>https://create-resumes.vercel.app/about</loc>
   </url>
   <url>
+    <loc>https://create-resumes.vercel.app/blogs</loc>
+  </url>
+  <url>
     <loc>https://create-resumes.vercel.app/faq</loc>
   </url>
   <url>
@@ -17,5 +20,20 @@
   </url>
   <url>
     <loc>https://create-resumes.vercel.app/contact</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/blogs//blogs/how-to-create-a-resume-with-no-work-experience</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/blogs//blogs/common-resume-mistakes-to-avoid</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/blogs//blogs/How-to-write-a-clear-header</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/blogs//blogs/Ways-to-write-a-good-resume-Summary</loc>
+  </url>
+  <url>
+    <loc>https://create-resumes.vercel.app/blogs//blogs/Role-of-Education-Section-in-resume</loc>
   </url>
 </urlset>
