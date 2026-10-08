@@ -216,19 +216,7 @@ Your resume should reflect the position you are applying for.
   `,
   date: "2026-10-07"
     },
-  {/*
-  {
-    slug: "common-resume-mistakes",
-    title: "Common Resume Mistakes",
-    description:
-      "Learn about common mistakes that can reduce the effectiveness of a resume.",
-    content: `
-Write your blog content here.
 
-Add your complete article content here.
-    `,
-    date: "2026-10-08",
-  }, */ }
   {
     slug: "common-resume-mistakes-to-avoid",
     title: "Common Resume Mistakes to avoid",
@@ -251,3 +239,17 @@ Add your complete article content here.
     date: "2026-10-08",
   },
 ];
+
+  /* Boiler Plate 
+  {
+    slug: "common-resume-mistakes",
+    title: "Common Resume Mistakes",
+    description:
+      "Learn about common mistakes that can reduce the effectiveness of a resume.",
+    content: `
+Write your blog content here.
+
+Add your complete article content here.
+    `,
+    date: "2026-10-08",
+  }, */ 
