@@ -44,9 +44,7 @@ export default function Blogs() {
         </Link>
 
         <article className="prose prose-base sm:prose-lg max-w-none">
-          <h1 className="text-4xl font-bold">
-            {selectedBlog.title}
-          </h1>
+    
 
           <p className="mt-3 text-sm text-gray-500">
             {selectedBlog.date}
