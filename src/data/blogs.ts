@@ -216,7 +216,7 @@ Your resume should reflect the position you are applying for.
   `,
   date: "2026-10-07"
     },
-  
+  {/*
   {
     slug: "common-resume-mistakes",
     title: "Common Resume Mistakes",
@@ -226,6 +226,27 @@ Your resume should reflect the position you are applying for.
 Write your blog content here.
 
 Add your complete article content here.
+    `,
+    date: "2026-10-08",
+  }, */ }
+  {
+    slug: "common-resume-mistakes-to-avoid",
+    title: "Common Resume Mistakes to avoid",
+    description:
+      "Learn about common mistakes that can reduce the effectiveness of a resume.",
+    content: `
+# Avoid these common mistakes:
+
+- Using a generic objective
+- Listing skills you cannot explain
+- Adding irrelevant personal information
+- Writing large paragraphs
+- Using excessive design elements
+- Adding fake experience
+- Exaggerating achievements
+- Sending the same resume everywhere
+- Ignoring spelling and formatting errors
+
     `,
     date: "2026-10-08",
   },
