@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { blogs } from "../src/data/blogs";
 
 const baseUrl = "https://create-resumes.vercel.app";
 
@@ -13,14 +14,13 @@ const staticPages = [
   "/contact",
 ];
 
-const blogSlugs = [
-  "how-to-create-a-resume-with-no-work-experience",
-  "resume-tips-for-students",
-];
+const blogUrls = blogs.map(
+  (blog) => `/blogs/${blog.slug}`
+);
 
 const urls = [
   ...staticPages,
-  ...blogSlugs.map((slug) => `/blogs/${slug}`),
+  ...blogUrls.map((slug) => `/blogs/${slug}`),
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
