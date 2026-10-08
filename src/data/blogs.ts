@@ -216,17 +216,122 @@ Your resume should reflect the position you are applying for.
   `,
   date: "2026-10-07"
     },
-  
+
   {
-    slug: "common-resume-mistakes",
-    title: "Common Resume Mistakes",
+    slug: "common-resume-mistakes-to-avoid",
+    title: "Common Resume Mistakes to avoid",
     description:
       "Learn about common mistakes that can reduce the effectiveness of a resume.",
     content: `
-Write your blog content here.
+# Avoid these common mistakes:
 
-Add your complete article content here.
+- Using a generic objective
+- Listing skills you cannot explain
+- Adding irrelevant personal information
+- Writing large paragraphs
+- Using excessive design elements
+- Adding fake experience
+- Exaggerating achievements
+- Sending the same resume everywhere
+- Ignoring spelling and formatting errors
+
     `,
     date: "2026-10-08",
   },
+
+    {
+    slug: "How-to-write-a-clear-header",
+    title: " How to write a clear resume header ",
+    description:
+      " Guide to write header of the resume.",
+    content: `
+# How to write a clear header
+Your name should be easy to find at the top of your resume.
+
+Include:
+
+- Full name
+- Professional email address
+- Phone number
+- Location
+- LinkedIn profile
+- GitHub or portfolio
+
+Avoid unnecessary personal information that does not help the recruiter evaluate your qualifications.
+
+    `,
+    date: "2026-10-08",
+  }, 
+
+    {
+    slug: "Ways-to-write-a-good-resume-Summary",
+    title: " How to write a better Resume Summary",
+    description:
+      " Ways to write a good resume Summary.",
+    content: `
+    # Ways to write a good resume Summary
+Your summary should quickly explain who you are, what you know, and what type of opportunity you are looking for.
+
+For example:
+
+> Computer Science student with a strong foundation in Python, JavaScript, SQL, and data structures. Experienced in building academic and personal projects and interested in backend development and software engineering.
+
+Keep it short and specific.
+
+Avoid generic statements such as:
+
+> "I am a hardworking, passionate and motivated individual."
+
+Almost every resume says this. Recruiters have probably developed immunity.
+
+    `,
+    date: "2026-10-08",
+  }, 
+    {
+    slug: "Role-of-Education-Section-in-resume",
+    title: "Role of Education Section in resume",
+    description:
+      " ",
+    content: `
+    # Role of Education Section in resume
+Adding education section becomes more important,
+if you do not have an experience yet
+
+Include:
+
+- Degree
+- College or university
+- Expected graduation year
+- CGPA or percentage, if useful
+- Relevant coursework
+
+For technical positions, relevant subjects could include:
+
+- Data Structures and Algorithms
+- Database Management Systems
+- Operating Systems
+- Computer Networks
+- Software Engineering
+- Machine Learning
+
+Note : Avoid it, if your education summary is less important 
+      
+
+    `,
+    date: "2026-10-08",
+  }, 
 ];
+
+  /* Boiler Plate 
+  {
+    slug: " ",
+    title: " ",
+    description:
+      " ",
+    content: `
+Write your blog content here.
+
+    `,
+    date: "2026-10-08",
+  }, 
+  */ 
