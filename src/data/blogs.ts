@@ -13,7 +13,6 @@ export const blogs: Blog[] = [
   title: "How to Create a Resume With No Work Experience",
   description: "Learn how to create a professional resume even when you have no formal work experience.",
   content: `
-# How to Create a Resume With No Work Experience
 
 Creating a resume without work experience can feel difficult. Many job descriptions ask for experience, while students and recent graduates are still trying to get their first opportunity.
 
