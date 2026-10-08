@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { blogs } from "../src/data/blogs";
+import { blogs } from "../data/blogs";
 
 const baseUrl = "https://create-resumes.vercel.app";
 
