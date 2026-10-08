@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound' ;
 import Blogs from "./pages/Blogs";
 import './index.css';
 
-import SignUp from "./pages/SignUp";
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path='*' element={<NotFound />} />
         <Route path="/blogs" element={<Blogs />} />
       <Route path="/blogs/:slug" element={<Blogs />} />
-        <Route path="/signup" element={<SignUp />} />
+        
       </Routes>
     </BrowserRouter>
   </StrictMode>,
