@@ -43,7 +43,11 @@ export default function Blogs() {
           ← Back to Blogs
         </Link>
 
-        <article className="mt-8 prose prose-lg max-w-none">
+        <article className="prose-base
+    sm:prose-lg
+    max-w-none
+    prose-li:my-1
+    prose-li>p:my-0">
           <h1 className="text-4xl font-bold">
             {selectedBlog.title}
           </h1>
