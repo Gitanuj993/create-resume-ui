@@ -7,6 +7,7 @@ import { Contact } from './pages/Contact';
 import { Faq } from './pages/Faq';
 import { Privacy } from './pages/Privacy';
 import { Terms } from './pages/Terms';
+import Signup from './pages/Signup';
 import NotFound from './pages/NotFound' ;
 import Blogs from "./pages/Blogs";
 import './index.css';
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/faq" element={<Faq />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/contact" element={<Contact />} />
         <Route path='*' element={<NotFound />} />
         <Route path="/blogs" element={<Blogs />} />
