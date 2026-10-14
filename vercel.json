@@ -6,7 +6,7 @@
       "destination": "https://create-resume-backend-1dql.onrender.com/resume/:path*"
     },
     {
-      "source": "/(about|faq|privacy|terms|contact)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
