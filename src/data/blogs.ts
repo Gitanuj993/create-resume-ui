@@ -320,6 +320,19 @@ Note : Avoid it, if your education summary is less important
     `,
     date: "2026-10-08",
   }, 
+    {
+    slug: "why-create-resumes.com-for-resume-generation",
+    title: "Why Create-Resumes for resume generation",
+    description:
+      "Importance of Create-Resumes.com",
+    content: `
+   ###  Create-Resume(s) is genuinely useful free resume builder for 
+   - fresh graduates 
+   - reliable PDF downloads
+   - excellent mobile usability
+    `,
+    date: "2026-10-15",
+  }, 
 ];
 
   /* Boiler Plate 
