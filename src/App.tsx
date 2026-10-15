@@ -127,6 +127,9 @@ export default function App() {
       return;
     }
 
+    // Inform the user that backend may be slow (free-tier hosting) and ask them to wait
+    showToast('PDF generation may take up to 1 minute — backend is hosted on a free tier and may cold-start. Please wait.', 'info');
+
     setIsGenerating(true);
     try {
       const result = await submitResumeForPdf(resumeData, {
