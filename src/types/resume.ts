@@ -151,8 +151,8 @@ export const SAMPLE_RESUME_DATA: ResumeData = {
     location: 'Indore, India',
   },
   social_links: {
-    linkedin: 'https://linkedin.com/in/anuj',
-    github: 'https://github.com/anuj',
+    linkedin: 'https://linkedin.com/in/gitanuj993',
+    github: 'https://github.com/Gitanuj993',
     portfolio: 'https://anuj-tanwar.me',
   },
   summary: 'Computer Science student and engineer focused on high-throughput backend services, distributed systems, and clean RESTful API design.',
@@ -189,7 +189,7 @@ export const SAMPLE_RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
-      name: 'ResumeForge PDF Generator',
+      name: 'CreateResumes PDF Generator',
       description: 'Microservice engine that compiles structured JSON resumes into pixel-perfect PDF documents.',
       technologies: ['Python', 'FastAPI', 'ReportLab', 'Docker'],
       link: 'https://github.com/anuj/resume-generator'
