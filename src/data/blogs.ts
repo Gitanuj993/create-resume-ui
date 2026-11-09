@@ -15,13 +15,15 @@ export const blogs: Blog[] = [
   content: `
 # How to Create a Resume With No Work Experience
 
-Creating a resume without work experience can feel difficult. Many job descriptions ask for experience, while students and recent graduates are still trying to get their first opportunity.
+Creating a resume without work experience is not a bad thing. Many job descriptions ask for experience, while students and freshers are trying to get their first opportunity.
 
-The good news is that **no work experience does not mean no experience at all**.
+The good news is that **no work experience does not mean you are not a good fit**.
 
-Projects, education, technical skills, certifications, volunteering, and personal achievements can all demonstrate your ability.
+Your projects, educational qualifications and technical skills can all demonstrate your ability.
 
-## 1. Start With a Clear Header
+## Best Practices for you
+
+### 1. Start With a Clear Header
 
 Your name should be easy to find at the top of your resume.
 
@@ -36,9 +38,9 @@ Include:
 
 Avoid unnecessary personal information that does not help the recruiter evaluate your qualifications.
 
-## 2. Write a Strong Resume Summary
+### 2. Write a Strong Resume Summary (Optional)
 
-Your summary should quickly explain who you are, what you know, and what type of opportunity you are looking for.
+Your summary should quickly explain **who you are**, **what you know**, and **what type of opportunity** you are looking for.
 
 For example:
 
@@ -50,9 +52,9 @@ Avoid generic statements such as:
 
 > "I am a hardworking, passionate and motivated individual."
 
-Almost every resume says this. Recruiters have probably developed immunity.
+**Almost every resume** says this. Recruiters have probably developed immunity.
 
-## 3. Make Your Education Work for You
+### 3. Make Your Education Work for You
 
 When you have limited professional experience, education becomes more important.
 
@@ -64,7 +66,7 @@ Include:
 - CGPA or percentage, if useful
 - Relevant coursework
 
-For technical positions, relevant subjects could include:
+For technical positions, relevant subjects could include like:
 
 - Data Structures and Algorithms
 - Database Management Systems
@@ -73,7 +75,7 @@ For technical positions, relevant subjects could include:
 - Software Engineering
 - Machine Learning
 
-## 4. Use Projects as Your Practical Experience
+### 4. Use Projects as Your Practical Experience
 
 Projects are one of the strongest ways to demonstrate your abilities when you have no formal employment history.
 
@@ -104,9 +106,9 @@ Write:
 
 The second statement tells the recruiter something they can actually evaluate.
 
-## 5. Highlight Relevant Skills
+### 5. Highlight Relevant Skills
 
-Create a dedicated skills section.
+Create a dedicated skill section.
 
 For example:
 
@@ -122,11 +124,11 @@ For example:
 
 Only include skills that you can actually explain during an interview.
 
-Listing 30 technologies that were used once in a YouTube tutorial is not a technical skill set.
+**Listing 30 technologies** that were used once in a YouTube tutorial is not a technical skill set.
 
-## 6. Add Certifications and Courses
+### 6. Add Certifications and Courses
 
-Certifications can strengthen an entry-level resume when they are relevant to the position.
+Certifications can strengthen an **entry-level resume** when they are relevant to the position.
 
 Include:
 
@@ -134,11 +136,11 @@ Include:
 - Issuing organization
 - Completion date
 
-However, certifications should support practical skills rather than replace them.
+> However, certifications should support practical skills rather than replace them.
 
-A recruiter is generally more interested in what you can build than in how many beginner courses you completed.
+A recruiter is generally more interested in **what you can build** than in how many beginner courses you completed.
 
-## 7. Include Relevant Achievements
+### 7. Include Relevant Achievements
 
 Consider adding achievements such as:
 
@@ -152,7 +154,7 @@ Consider adding achievements such as:
 
 Focus on achievements that demonstrate useful qualities such as problem-solving, teamwork, leadership, or technical ability.
 
-## 8. Add Your GitHub or Portfolio
+### 8. Add Your GitHub or Portfolio
 
 For technical jobs, a GitHub profile or portfolio can provide evidence of your skills.
 
@@ -164,9 +166,9 @@ Make sure your repositories contain:
 - Screenshots where useful
 - Clean and understandable code
 
-Your GitHub should make it easy for someone to understand what you have built.
+Your GitHub should make it easy for someone to understand **what you have built**.
 
-## 9. Keep Your Resume Short
+### 9. Keep Your Resume Short
 
 For most students and fresh graduates, a **one-page resume** is usually enough.
 
@@ -178,11 +180,9 @@ Prioritize:
 4. Certifications
 5. Achievements
 
-Remove information that does not strengthen your application.
+> Remove information that does not strengthen your application.
 
-More pages do not automatically mean more experience.
-
-## 10. Tailor Your Resume to the Job
+### 10. Tailor Your Resume to the Job (Most Important)
 
 Do not send exactly the same resume to every company.
 
