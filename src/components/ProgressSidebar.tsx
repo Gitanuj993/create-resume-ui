@@ -162,8 +162,7 @@ export const ProgressSidebar: React.FC<ProgressSidebarProps> = ({
 
       {/* Bottom info footer */}
       <div className="p-4 border-t border-[#E5E5E5] mt-auto hidden lg:block text-[11px] text-[#8A8A8A] leading-relaxed">
-        <p>Auto-saving to browser storage.</p>
-        <p className="mt-1 text-[#666666]">Target: <span className="font-mono text-[#202020]">POST /resume/generate</span></p>
+        <p className='flex'><span> <Check className="w-2 h-2" /></span>Auto-saving to browser storage. </p>
       </div>
     </aside>
   );

@@ -4,7 +4,6 @@
  */
 
 export type ReorderableSection = 
-  | 'summary'
   | 'skills'
   | 'experience'
   | 'projects'
@@ -164,7 +163,7 @@ export const SAMPLE_RESUME_DATA: ResumeData = {
   },
   experience: [
     {
-      company: 'Apex Systems',
+      company: 'Mock Apex Systems',
       role: 'Backend Engineering Intern',
       location: 'Remote',
       start_date: 'June 2026',
@@ -176,7 +175,7 @@ export const SAMPLE_RESUME_DATA: ResumeData = {
       ]
     },
     {
-      company: 'TechCraft Labs',
+      company: 'Mock TechCraft Labs',
       role: 'Junior Software Fellow',
       location: 'Indore, India',
       start_date: 'January 2026',
@@ -195,7 +194,7 @@ export const SAMPLE_RESUME_DATA: ResumeData = {
       link: 'https://github.com/anuj/resume-generator'
     },
     {
-      name: 'Distributed Task Queue',
+      name: 'Mock Distributed Task Queue',
       description: 'Fault-tolerant asynchronous job processor supporting worker concurrency, exponential backoff, and dead-letter queues.',
       technologies: ['Go', 'Redis', 'Protobuf', 'PostgreSQL'],
       link: 'https://github.com/anuj/dist-queue'
@@ -203,12 +202,12 @@ export const SAMPLE_RESUME_DATA: ResumeData = {
   ],
   achievements: [
     {
-      title: 'Smart India Hackathon Finalist',
+      title: 'Mock Smart India Hackathon Finalist',
       description: 'Selected among top 30 teams out of 2,400+ national submissions for building decentralized identity verification.',
       date: 'March 2026'
     },
     {
-      title: 'ACM ICPC Regional Participant',
+      title: 'Mock ACM ICPC Regional Participant',
       description: 'Secured top 15 rank in regional collegiate programming contest solving algorithmic problems in C++.',
       date: '2025'
     }
@@ -219,7 +218,7 @@ export const SAMPLE_RESUME_DATA: ResumeData = {
       degree: 'Bachelor of Technology (B.Tech)',
       field_of_study: 'Computer Science & Engineering',
       start_date: '2023',
-      end_date: '2027',
+      end_date: '2024',
       grade: '8.4 CGPA'
     }
   ],
