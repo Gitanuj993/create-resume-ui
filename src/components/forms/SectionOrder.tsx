@@ -32,12 +32,6 @@ interface SectionMeta {
 }
 
 const SECTION_METAS: Record<ReorderableSection, SectionMeta> = {
-  summary: {
-    key: 'summary',
-    title: 'Professional Summary',
-    subtitle: 'Career objective, technical identity, and target focus',
-    icon: FileText,
-  },
   skills: {
     key: 'skills',
     title: 'Technical Skills',
@@ -71,7 +65,6 @@ const SECTION_METAS: Record<ReorderableSection, SectionMeta> = {
 };
 
 const DEFAULT_ORDER: ReorderableSection[] = [
-  'summary',
   'skills',
   'experience',
   'projects',
@@ -80,7 +73,6 @@ const DEFAULT_ORDER: ReorderableSection[] = [
 ];
 
 const STUDENT_ORDER: ReorderableSection[] = [
-  'summary',
   'education',
   'skills',
   'projects',
@@ -94,7 +86,7 @@ export const SectionOrder: React.FC<SectionOrderProps> = ({
   onPrev,
   onNext,
 }) => {
-  const currentOrder = data.section_order && data.section_order.length === 6 
+  const currentOrder = data.section_order && data.section_order.length === 5 
     ? data.section_order 
     : DEFAULT_ORDER;
 
@@ -171,7 +163,7 @@ export const SectionOrder: React.FC<SectionOrderProps> = ({
       <div className="mb-4 p-3 rounded-lg bg-[#F8F8F8] border border-[#E5E5E5] flex items-center justify-between text-xs text-[#666666]">
         <div className="flex items-center gap-2">
           <Lock className="w-3.5 h-3.5 text-[#8A8A8A]" />
-          <span><strong>Header Information</strong> (Full Name, Contact, Social Links) is permanently anchored at the top.</span>
+          <span><strong>Header Information</strong> and <strong>professional summary</strong> is permanently anchored at the top.</span>
         </div>
         <span className="text-[11px] text-[#8A8A8A] font-mono">Fixed (Top)</span>
       </div>
