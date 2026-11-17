@@ -42,7 +42,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({
   onTogglePreview,
 }) => {
   const [showApiConfig, setShowApiConfig] = useState(false);
-  const [customApiUrl, setCustomApiUrl] = useState('/resume/generate');
+  const [customApiUrl, setCustomApiUrl] = useState('http://localhost:8000/resume/generate');
   const [generationError, setGenerationError] = useState<string | null>(null);
   const [generationSuccess, setGenerationSuccess] = useState<string | null>(null);
 
@@ -268,7 +268,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({
         >
           <Server className="w-3.5 h-3.5" />
           <span>{showApiConfig ? 'Hide Backend Endpoint Config' : 'Configure Backend API Endpoint'}</span>
-          <span className="text-[#8A8A8A] font-mono text-[11px]">(default: /resume/generate)</span>
+          <span className="text-[#8A8A8A] font-mono text-[11px]">(for self hosted backend)</span>
         </button>
 
         {showApiConfig && (
@@ -281,12 +281,12 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({
                 type="text"
                 value={customApiUrl}
                 onChange={(e) => setCustomApiUrl(e.target.value)}
-                placeholder="/resume/generate or http://localhost:8000/resume/generate"
+                placeholder="http://localhost:8000/resume/generate"
                 className="flex-1 px-3 py-2 text-xs font-mono bg-white border border-[#D4D4D4] focus:border-[#2B2B2B] rounded-lg text-[#202020] outline-hidden"
               />
               <button
                 type="button"
-                onClick={() => setCustomApiUrl('/resume/generate')}
+                onClick={() => setCustomApiUrl('http://localhost:8000/resume/generate')}
                 className="px-2.5 py-2 text-xs bg-[#E5E5E5] hover:bg-[#D4D4D4] rounded-lg text-[#202020] font-medium"
               >
                 Reset Default
